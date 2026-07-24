@@ -135,7 +135,7 @@ app.UseCors("cors");
 
 
 
-app.UseMigration();
+await app.UseMigrationAsync();
 
 app.UseRateLimiter();
 

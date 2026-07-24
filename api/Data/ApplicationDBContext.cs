@@ -22,28 +22,6 @@ namespace api.Data
 		{
 			base.OnModelCreating(builder);
 
-			builder.Entity<JobOffer>().HasData(
-				 new JobOffer
-				 {
-					 Id = 1,
-					 JobTitle = "Backend .NET Developer",
-					 Salary = 12000,
-					 Description = "Work with ASP.NET Core, EF Core and PostgreSQL"
-				 },
-				new JobOffer
-				{
-					Id = 2,
-					JobTitle = "Frontend React Developer",
-					Salary = 10000,
-					Description = "Build UI using React and TypeScript"
-				},
-				new JobOffer
-				{
-					Id = 3,
-					JobTitle = "Fullstack Developer",
-					Salary = 15000,
-					Description = "Work across backend and frontend systems"
-				});
 
 
 			List<IdentityRole> roles = new List<IdentityRole>

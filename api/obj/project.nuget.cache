@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8GlK0T7y/4s=",
+  "dgSpecHash": "IryMAQpDNhk=",
   "success": true,
-  "projectFilePath": "C:\\hr\\HR\\api\\api.csproj",
+  "projectFilePath": "C:\\HR\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etzy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\etzy\\.nuget\\packages\\mapster\\10.0.7\\mapster.10.0.7.nupkg.sha512",

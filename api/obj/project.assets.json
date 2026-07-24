@@ -3801,11 +3801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\hr\\HR\\api\\api.csproj",
+      "projectUniqueName": "C:\\HR\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\hr\\HR\\api\\api.csproj",
+      "projectPath": "C:\\HR\\api\\api.csproj",
       "packagesPath": "C:\\Users\\etzy\\.nuget\\packages\\",
-      "outputPath": "C:\\hr\\HR\\api\\obj\\",
+      "outputPath": "C:\\HR\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

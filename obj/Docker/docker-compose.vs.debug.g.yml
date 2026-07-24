@@ -15,8 +15,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\hr\HR\api:/app:rw
-      - C:\hr\HR:/src:rw
+      - C:\HR\api:/app:rw
+      - C:\HR:/src:rw
       - C:\Users\etzy\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\etzy\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro

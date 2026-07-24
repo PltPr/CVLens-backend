@@ -20,7 +20,7 @@ namespace api.Services
 			var content = new StringContent(json, Encoding.UTF8, "application/json");
 
 			var response = await httpClient.PostAsync(
-				"http://ollama:11434/api/generate",
+				"http://localhost:11434/api/generate",
 				content);
 
 			if (!response.IsSuccessStatusCode)

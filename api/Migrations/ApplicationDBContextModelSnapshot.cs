@@ -329,29 +329,6 @@ namespace api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("JobOffers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Work with ASP.NET Core, EF Core and PostgreSQL",
-                            JobTitle = "Backend .NET Developer",
-                            Salary = 12000
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Build UI using React and TypeScript",
-                            JobTitle = "Frontend React Developer",
-                            Salary = 10000
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Work across backend and frontend systems",
-                            JobTitle = "Fullstack Developer",
-                            Salary = 15000
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
