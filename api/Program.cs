@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Npgsql;
+using System.Data;
 using System.Text;
 using System.Threading.RateLimiting;
 
@@ -21,6 +23,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDBContext>(opts =>
 {
 	opts.UseNpgsql(builder.Configuration.GetConnectionString("Database"));
+});
+
+builder.Services.AddScoped<IDbConnection>(sp =>
+{
+	var config = sp.GetRequiredService<IConfiguration>();
+
+	return new NpgsqlConnection(config.GetConnectionString("Database"));
 });
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
@@ -114,6 +123,7 @@ builder.Services.AddScoped<IOllamaService,OllamaService>();
 builder.Services.AddScoped<CurrentUserService>();
 builder.Services.AddSingleton<IQueueService,QueueService>();
 builder.Services.AddHostedService<ApplicationBackgroundService>();
+builder.Services.AddScoped<IRaportRepository, RaportRepository>();
 
 builder.Services.AddHttpClient();
 

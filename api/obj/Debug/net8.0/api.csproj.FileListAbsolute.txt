@@ -305,3 +305,4 @@ C:\HR\api\obj\Debug\net8.0\refint\api.dll
 C:\HR\api\obj\Debug\net8.0\api.pdb
 C:\HR\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\HR\api\obj\Debug\net8.0\ref\api.dll
+C:\HR\api\bin\Debug\net8.0\Dapper.dll

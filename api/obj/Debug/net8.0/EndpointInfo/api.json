@@ -355,6 +355,18 @@
           }
         }
       }
+    },
+    "/api/Raport": {
+      "get": {
+        "tags": [
+          "Raport"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
